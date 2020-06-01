@@ -10,7 +10,7 @@ public class DirectorTest {
 
     @Before
     public void setUp(){
-        director = new Director("Sam", "ACD2222", 85000);
+        director = new Director("Sam", "ACD2222", 85000, 40000);
     }
 
     @Test
@@ -26,6 +26,11 @@ public class DirectorTest {
     @Test
     public void directorHasSalary(){
         assertEquals(85000, director.getSalary(), 0.1);
+    }
+
+    @Test
+    public void directorHasBudget(){
+        assertEquals(40000, director.getBudget(), 0.1);
     }
 
 }
