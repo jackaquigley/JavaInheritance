@@ -1,6 +1,6 @@
-package manager;
+package staff.manager;
 
-import employee.Employee;
+import staff.employee.Employee;
 
 public class Manager extends Employee {
     public Manager(String name, String nationalInsurance, double salary) {

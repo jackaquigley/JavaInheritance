@@ -1,4 +1,4 @@
-package employee;
+package staff.employee;
 
 public abstract class Employee {
 

@@ -1,5 +1,4 @@
-import manager.Manager;
-import org.junit.Assert;
+import staff.manager.Manager;
 import org.junit.Before;
 import org.junit.Test;
 
