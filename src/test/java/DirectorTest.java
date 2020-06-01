@@ -18,4 +18,14 @@ public class DirectorTest {
         assertEquals("Sam", director.getName());
     }
 
+    @Test
+    public void directorHasNationalInsurance(){
+        assertEquals("ACD2222", director.getNationalInsurance());
+    }
+
+    @Test
+    public void directorHasSalary(){
+        assertEquals(85000, director.getSalary(), 0.1);
+    }
+
 }
