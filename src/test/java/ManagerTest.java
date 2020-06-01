@@ -11,7 +11,7 @@ public class ManagerTest {
 
     @Before
     public void setUp(){
-        manager = new Manager ("Jack", "ABC2231", 22000, "Finance");
+        manager = new Manager ("Jack", "ABC2231", 22000);
     }
 
     @Test
@@ -30,12 +30,12 @@ public class ManagerTest {
     }
 
     @Test
-    public void managerCanGetBonus(){
+    public void canGetBonus(){
         assertEquals(220.0, manager.getBonus(), 0.1);
     }
 
     @Test
-    public void managerCanChangeSalary(){
+    public void canChangeSalary(){
         manager.changeSalary(2200.0);
        assertEquals(24200.0, manager.getSalary(), 0.1);
     }
