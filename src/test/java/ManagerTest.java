@@ -1,16 +1,17 @@
-import staff.manager.Manager;
 import org.junit.Before;
 import org.junit.Test;
+import staff.manager.*;
 
 import static org.junit.Assert.assertEquals;
 
+
 public class ManagerTest {
 
-    Manager manager;
+    private Manager manager;
 
     @Before
     public void setUp(){
-        manager = new Manager("Jack", "ABC2231", 22000);
+        manager = new Manager ("Jack", "ABC2231", 22000, "Finance");
     }
 
     @Test
@@ -38,5 +39,11 @@ public class ManagerTest {
         manager.changeSalary(2200.0);
        assertEquals(24200.0, manager.getSalary(), 0.1);
     }
+
+    @Test
+    public void managerHasDepartmentName(){
+        assertEquals("Finance", manager.getDepartmentName());
+    }
+
 
 }

@@ -1,4 +1,4 @@
-package staff.employee;
+package staff;
 
 public abstract class Employee {
 
@@ -13,7 +13,7 @@ public abstract class Employee {
     }
 
     public String getName(){
-        return this.name;
+        return name;
     }
 
     public String getNationalInsurance(){
