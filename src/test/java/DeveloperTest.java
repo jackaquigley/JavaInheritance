@@ -18,5 +18,15 @@ public class DeveloperTest {
         assertEquals("Bob", developer.getName());
     }
 
+    @Test
+    public void developerHasNationalInsurance(){
+        assertEquals("FCS2131", developer.getNationalInsurance());
+    }
+
+    @Test
+    public void developerHasSalary(){
+        assertEquals(40000, developer.getSalary(), 0.1);
+    }
+
 }
 
