@@ -28,6 +28,8 @@ public abstract class Employee {
         this.salary += salaryIncrease;
     }
 
-
+    public double getBonus(){
+        return this.salary / 100;
+    }
 
 }
